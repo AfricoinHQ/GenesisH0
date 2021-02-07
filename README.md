@@ -7,11 +7,13 @@ A python script for creating the parameters required for a unique genesis block.
     
 ### Examples
 The Nonce has to be between
+
      0 and 4294967294
 Create the original genesis hash found in Bitcoin
 
     python genesis.py -z "Jan 15 2021 Africoin was born." -n 12084524 -t 1610694000 -a scrypt -b 0x1e0ffff0
 Output:
+
     coinbase:                                                                                                                    
     04ffff001d01043141667269636f696e2068617320626563616d652061207265616c69747920696e7374656164206f6620616e20696465612e           
     algorithm: scrypt                                                                                                            
