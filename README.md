@@ -6,18 +6,20 @@ A python script for creating the parameters required for a unique genesis block.
 
     
 ### Examples
+The Nonce has to be between
+     0 and 4294967294
 Create the original genesis hash found in Bitcoin
 
-    python genesis.py -z "Jan 15 2021 Africoin was born." -n 12084524493 -t 1610694000 -a scrypt -b 0x1e0ffff0
+    python genesis.py -z "Jan 15 2021 Africoin was born." -n 12084524 -t 1610694000 -a scrypt -b 0x1e0ffff0
 Output:
-
-    algorithm: sha256
-    merkle hash: 4a5e1e4baab89f3a32518a88c31bc87f618f76673e2cc77ab2127b7afdeda33b
-    pszTimestamp: The Times 03/Jan/2009 Chancellor on brink of second bailout for banks
-    pubkey: 04678afdb0fe5548271967f1a67130b7105cd6a828e03909a67962e0ea1f61deb649f6bc3f4cef38c4f35504e51ec112de5c384df7ba0b8d578a4c702b6bf11d5f
-    time: 1231006505
-    bits: 0x1d00ffff
-    Searching for genesis hash..
+    coinbase:                                                                                                                    
+    04ffff001d01043141667269636f696e2068617320626563616d652061207265616c69747920696e7374656164206f6620616e20696465612e           
+    algorithm: scrypt                                                                                                            
+    merkle hash: 81e292852b77a6b6e0bc3e02d39dd0132a9d6db36b216501db9daf2720f6e112                                                
+    pszTimestamp: Africoin has became a reality instead of an idea.                                                              
+    pubkey: 04678afdb0fe5548271967f1a67130b7105cd6a828e03909a67962e0ea1f61deb649f6bc3f4cef38c4f35504e51ec112de5c384df7ba0b8d578a4c702b6bf11d5f                                                                                                                
+    time: 1610694000                                                                                                             
+    bits: 0x1e0ffff0 
     genesis hash found!
     nonce: 2083236893
     genesis hash: 000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f
