@@ -6,6 +6,8 @@ A python script for creating the parameters required for a unique genesis block.
 
     
 ### Examples
+It creates a Genesis hash with the phrase "Africoin was became a reality instead of an idea" Nonce = 12084524 unixtime = 1610694000 // This will be a time record in this block. This is our first block, algorithm = scrypt // encrypted as scrypt BITS = 0x1e0ffff0 // It is related to the system difficulty value, mainnet and testnet use 0x1e0ffff0 while Regression test will use 0x207fffff for scrypt.
+
 The Nonce has to be between
 
      0 and 4294967294
